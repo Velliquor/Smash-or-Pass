@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash or Pass</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Écran de Début -->
+    <div id="start-screen" class="screen visible">
+        <h1>Bienvenue au Smash or Pass</h1>
+        <p>Appuie sur le bouton ci-dessous pour commencer le jeu !</p>
+        <button onclick="startGame()">Commencer</button>
+    </div>
+
+    <!-- Écran de Jeu -->
+    <div id="game-screen" class="screen hidden">
+        <img id="character-image" src="" alt="Character Image">
+        <div id="button-container">
+            <button onclick="smash()">Smash</button>
+            <button onclick="pass()">Pass</button>
+        </div>
+    </div>
+
+    <!-- Écran de Fin -->
+    <div id="end-screen" class="screen hidden">
+        <h2>Fin du jeu !</h2>
+        <p>Le Smash or Pass est terminé. Revenez bientôt pour de nouvelles images !</p>
+        <button onclick="restart()">Recommencer</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
